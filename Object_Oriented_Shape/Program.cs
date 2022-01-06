@@ -14,3 +14,7 @@ Console.WriteLine(rectangle);
 rectangle.SayHello();
 
 Console.WriteLine();
+
+Circle circle = new Circle(5);
+Console.WriteLine(circle);
+circle.SayHello();
