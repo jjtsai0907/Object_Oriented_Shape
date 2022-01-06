@@ -19,7 +19,7 @@ namespace Object_Oriented_Shape
             Height = height;
         }
 
-        public Rectangle() { }
+        private Rectangle() { }
 
 
         public override double GetArea()

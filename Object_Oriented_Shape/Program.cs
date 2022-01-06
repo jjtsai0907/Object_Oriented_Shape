@@ -1,6 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Object_Oriented_Shape;
 
+Square square = new Square(2);
+Console.WriteLine(square);
+square.SideLength = 10;
+Console.WriteLine(square);
+square.SayHello();
+
 Console.WriteLine();
 
 Rectangle rectangle = new Rectangle(2,4);
