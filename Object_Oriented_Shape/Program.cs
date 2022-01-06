@@ -15,6 +15,13 @@ rectangle.SayHello();
 
 Console.WriteLine();
 
+Rectangle rectangleWithEqualSides = new Rectangle(2);
+Console.WriteLine(rectangleWithEqualSides);
+
+Console.WriteLine();
+
 Circle circle = new Circle(5);
 Console.WriteLine(circle);
 circle.SayHello();
+
+rectangle.ScreamHello();

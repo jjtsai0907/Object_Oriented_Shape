@@ -11,17 +11,18 @@ namespace Object_Oriented_Shape
         public double Width { get; set; }
         public double Height { get; set; }
 
-       // public Rectangle(): base() { }
+        public Rectangle(double width, double height) : this (height) {
+            Width = width;
+        }
 
-        public Rectangle(double width, double height)
+
+        public Rectangle(double height)
         {
-            Width = width ;
+            Width = height;
             Height = height;
         }
 
-        private Rectangle() { }
-
-
+        
         public override double GetArea()
         {
             return Width * Height;
@@ -44,7 +45,7 @@ namespace Object_Oriented_Shape
 
         public override void ScreamHello()
         {
-            Console.WriteLine($"{this.GetType().Name} RecClass ScreamHello {Width}!");
+            Console.WriteLine($"{this.GetType().Name} is overriding ScreamHello function!");
         }
     }
 }
